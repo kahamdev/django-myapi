@@ -7,7 +7,7 @@ from django.urls import path,include
 router=routers.DefaultRouter()
 
 # we register our viewset with the router
-router.register('',AfricanLeadersViewset,basename="african-leaders") # type: ignore
+router.register('african_leaders',AfricanLeadersViewset,basename="african-leaders") # type: ignore
 
 # we add path router urls below 
 urlpatterns=[
