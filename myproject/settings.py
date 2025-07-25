@@ -27,8 +27,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'api',
     'rest_framework',
+    'api', 
+    
 ]
 
 MIDDLEWARE = [
@@ -43,7 +44,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'myproject.urls'
 
-TEMPLATES = [
+from typing import List, Dict, Any
+
+TEMPLATES: List[Dict[str, Any]] = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
@@ -64,7 +67,9 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
+from typing import Dict, Any
+
+DATABASES: Dict[str, Dict[str, Any]] = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',

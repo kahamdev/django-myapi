@@ -5,6 +5,7 @@ from django.db import models
 class AfricanLeaders(models.Model):
     name=models.CharField(max_length=200)
     country=models.CharField(max_length=100)
+    party=models.CharField(max_length=200)
     gender=models.CharField(max_length=100)
     age=models.IntegerField()
 
