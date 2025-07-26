@@ -7,7 +7,7 @@ from .models import AfricanLeaders
 class AfricanLeadersViewset(viewsets.ModelViewSet):
     queryset=AfricanLeaders.objects.all()
     serializer_class=AfricanLeadersSerializer
-    # we can add permission classes here if needed  
+    
 
  
 
