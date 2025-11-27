@@ -7,19 +7,26 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='AfricanLeaders',
+            name="AfricanLeaders",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=200)),
-                ('country', models.CharField(max_length=100)),
-                ('party', models.CharField(max_length=200)),
-                ('gender', models.CharField(max_length=100)),
-                ('age', models.IntegerField()),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=200)),
+                ("country", models.CharField(max_length=100)),
+                ("party", models.CharField(max_length=200)),
+                ("gender", models.CharField(max_length=100)),
+                ("age", models.IntegerField()),
             ],
         ),
     ]
